@@ -17,6 +17,8 @@
 #define CYT2B7_TIMER_PCLK      PCLK_TCPWM0_CLOCKS0
 #define CYT2B7_TIMER_DIV_NO    0u
 
+extern volatile uint32_t cyt2b7_timer_ticks;
+
 void cyt2b7_timer_init(void);
 void cyt2b7_timer_isr(void);
 
